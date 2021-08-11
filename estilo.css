@@ -18,7 +18,7 @@
 }
 
 header {
-    background-color: #0e172c;
+    background-color: #d9d4e7;
     color: #0e172c;
 }
 
@@ -85,7 +85,7 @@ article.sobreMi {
     display: flex;
     flex-direction: row;
     width: 167vh;
-    background-color: antiquewhite;
+    background-color: red;
 }
 
 .imageSobreMi {
