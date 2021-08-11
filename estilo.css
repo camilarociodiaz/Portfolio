@@ -85,7 +85,7 @@ article.sobreMi {
     display: flex;
     flex-direction: row;
     width: 167vh;
-    background-color: antiquewhite;
+    background-color: red;
 }
 
 .imageSobreMi {
