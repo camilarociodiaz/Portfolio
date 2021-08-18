@@ -1,0 +1,10 @@
+@each $button in bubmit,
+reset,
+btn-outline-dark {
+    .#{$button}-icon {
+        background-color: #d9d4e7;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 12px;
+    }
+}

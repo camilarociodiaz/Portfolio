@@ -1,0 +1,19 @@
+* {
+    Margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "mediaqueries";
+@import "fonts";
+@import "header";
+@import "hero";
+@import "trabajosIndex";
+@import "footer";
+@import "contacto";
+@import "disenoGrafico";
+@import "trabajos";
+@import "ups";
+@import "bootstrap";

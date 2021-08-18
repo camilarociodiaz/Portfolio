@@ -1,0 +1,36 @@
+body {
+    header {
+        background-color: #d9d4e7;
+        color: #0e172c;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        div {
+            nav {
+                .menu {
+                    list-style: none;
+                    top: 0px;
+                    li a {
+                        background-color: #d9d4e7;
+                        color: #0e172c;
+                        text-decoration: none;
+                        padding: 2vh 11vh;
+                        display: block;
+                        position: relative;
+                        &:hover {
+                            background-color: #ece8f7;
+                            color: #c8bbec;
+                        }
+                    }
+                    .dropdown-menu.show {
+                        display: block;
+                        background-color: #d9d4e7;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+/*CONTACTO */
+
+.container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1rem;
+    margin: 3rem;
+
+    .textoContacto h1, p{
+        text-align: center;
+        color: black;
+        font-family: 'Playfair Display';
+
+}
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-areas: "nombre asunto""nombre texto""nombre texto""deseo deseo""botones botones";
+    grid-auto-columns: 58vh;
+    justify-items: start;
+
+
+    .nombre_completo {
+        grid-area: nombre;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    .asunto {
+        grid-area: asunto;
+        padding: 1rem;
+    }
+
+    .texto {
+        grid-area: texto;
+    }
+
+
+    .deseo {
+        grid-area: deseo;
+    }
+
+    .botones {
+        grid-area: botones;
+        padding: 1rem;
+        margin: 3px auto;
+        flex-direction: row;
+
+
+        input {
+            background-color: #d9d4e7;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 12px;
+        }
+    }
+}
+
+
+
+
