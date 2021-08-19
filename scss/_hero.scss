@@ -35,75 +35,46 @@ body {
         }
     }
     main {
-        margin: 10%;
-        .borde {
-            border: solid;
-            padding: 1rem;
-            border-color: grey;
-            transform: translate(50px, 50px);
-            display: flex;
-            width: 90%;
-            margin: 4;
-            flex-direction: column;
-            align-content: stretch;
-            align-items: flex-start;
-        }
+        margin: 5%;
         .sobreMi {
-            background-color: #d9d4e7;
-            padding: 0.5rem;
-            width: auto;
-            display: flex;
-            width: 90%;
-            margin: 4;
-            align-items: baseline;
-            justify-content: flex-start;
-            flex-direction: column;
+            display: grid;
+            gap: 10rem;
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+            background-color: #ece8f7;
+            padding: 8px;
             .imageSobreMi {
-                padding: 1rem;
+                grid-column: span 1;
+                width: 25rem;
                 margin: auto;
-                width: 85%;
-                position: absolute;
-                margin-top: -2rem;
-                transition-duration: 2s;
-                animation-duration: 2s;
-                animation-name: aparecerHero;
+                flex-wrap: wrap;
             }
-            .textoSobreMi {
-                color: black;
-                text-align: justify;
-                padding: 25px;
-                position: relative;
-                margin-left: 68vh;
-                margin-bottom: 1rem;
-                transform: translate(0, -4rem);
-                animation-duration: 2s;
-                animation-name: aparecerHero;
-                @keyframes opacity {
-                    0% {
-                        opacity: 0;
-                    }
-                    100% {
-                        opacity: 0.5;
-                        transform: rotate(10deg);
-                        transform: translatey(10vh);
-                    }
-                }
-            }
-            h4 {
-                font-family: "Playfair Display", serif;
-                text-align: center;
-                display: inline-block;
-                padding-top: 18%;
-                color: #0e172c;
-                font-size: 4rem;
-            }
-            p {
-                color: black;
-                text-align: unset;
-                font-family: "Inter", sans-serif;
-                padding: 3rem;
-                margin: 1rem;
-            }
+        }
+        img {
+            width: inherit;
+            grid-template-columns: repeat(auto-fill, minmax(10rem, 30%));
         }
     }
+}
+
+.textoSobreMi {
+    grid-column: auto;
+    .tituloSobreMi {
+        font-size: 3rem;
+    }
+}
+
+h4 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    display: inline-block;
+    padding-top: 18%;
+    color: #0e172c;
+    font-size: 4rem;
+}
+
+p {
+    color: black;
+    text-align: unset;
+    font-family: "Inter", sans-serif;
+    margin: 1rem;
 }
