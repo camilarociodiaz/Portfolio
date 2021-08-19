@@ -7558,6 +7558,7 @@ body .hero {
     animation-name: aparecerHero; }
   body .hero .camilaRocioDiaz {
     color: white;
+    font-size: 3rem;
     font-family: 'Playfair Display', serif;
     animation-duration: 5s;
     animation-name: aparecerHero; }
@@ -7574,24 +7575,17 @@ body main {
     border: solid;
     padding: 1rem;
     border-color: grey;
-    transform: translate(50px, 50px); }
+    transform: translate(50px, 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
     body main .borde .sobreMi {
       display: flex;
       flex-direction: row;
       width: 167vh;
-      background-color: antiquewhite;
-      /* .imageFondoFoto {
-                                            width: 151vh;
-                                            position: absolute;
-                                            /* top: 65vh; */
-      /* right: -1vh; */
-      /*
-                                            opacity: 20%;
-                                            animation-duration: 4s;
-                                            animation-name: opacity;
-                                            top: 376px;
-                                            left: 89px;}
-                                            /**/ }
+      background-color: #d9d4e7; }
       body main .borde .sobreMi .imageSobreMi {
         margin: 2rem;
         width: 70vh;
@@ -7707,14 +7701,15 @@ footer {
 
 /*CONTACTO */
 .container {
-  background-color: antiquewhite;
+  background-color: #eeaeca;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   padding: 1rem;
   margin: 3rem; }
-  .container .textoContacto h1, .container .textoContacto .h1, .container p {
+  .container .textoContacto h1, .container .textoContacto .h1,
+  .container p {
     text-align: center;
     color: black;
     font-family: 'Playfair Display'; }
@@ -7752,7 +7747,8 @@ body {
   font-family: 'Quicksand', sans-serif; }
 
 .gal-container {
-  padding: 12px; }
+  padding: 12px;
+  background-color: #eeaeca; }
 
 .gal-item {
   overflow: hidden;
@@ -7785,9 +7781,6 @@ body {
   -webkit-transition: all 0.5s ease-in-out 0s;
   -moz-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s; }
-
-.gal-item a:hover:after {
-  opacity: 1; }
 
 .modal-open .gal-container .modal {
   background-color: rgba(0, 0, 0, 0.4); }
@@ -7856,6 +7849,9 @@ body {
 @media (max-width: 768px) {
   .gal-container .modal-content {
     height: 250px; } }
+
+body {
+  background-color: #eeaeca; }
 
 /*trabajos*/
 body .trabajosDi {
