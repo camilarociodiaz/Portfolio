@@ -1,4 +1,12 @@
 div {
+    .tituloTrabajos {
+        background-color: #ffff;
+        font-family: 'Playfair Display';
+        text-align: center;
+        padding: 2rem;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
     .trabajosPadre {
         display: flex;
         flex-wrap: wrap;

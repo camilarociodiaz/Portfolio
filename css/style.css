@@ -7559,7 +7559,7 @@ body .hero {
   body .hero .camilaRocioDiaz {
     color: white;
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     animation-duration: 5s;
     animation-name: aparecerHero; }
 
@@ -7577,24 +7577,31 @@ body main {
     border-color: grey;
     transform: translate(50px, 50px);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 90%;
+    margin: 4;
     flex-direction: column;
-    flex-wrap: wrap; }
-    body main .borde .sobreMi {
-      display: flex;
-      flex-direction: row;
-      width: 167vh;
-      background-color: #d9d4e7; }
-      body main .borde .sobreMi .imageSobreMi {
-        margin: 2rem;
-        width: 70vh;
-        position: absolute;
-        margin-top: -2rem;
-        transition-duration: 2s;
-        animation-duration: 2s;
-        animation-name: aparecerHero; }
-    body main .borde .textoSobreMi {
+    align-content: stretch;
+    align-items: flex-start; }
+  body main .sobreMi {
+    background-color: #d9d4e7;
+    padding: 0.5rem;
+    width: auto;
+    display: flex;
+    width: 90%;
+    margin: 4;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-direction: column; }
+    body main .sobreMi .imageSobreMi {
+      padding: 1rem;
+      margin: auto;
+      width: 85%;
+      position: absolute;
+      margin-top: -2rem;
+      transition-duration: 2s;
+      animation-duration: 2s;
+      animation-name: aparecerHero; }
+    body main .sobreMi .textoSobreMi {
       color: black;
       text-align: justify;
       padding: 25px;
@@ -7612,19 +7619,27 @@ body main {
     opacity: 0.5;
     transform: rotate(10deg);
     transform: translatey(10vh); } }
-      body main .borde .textoSobreMi h4, body main .borde .textoSobreMi .h4 {
-        font-family: 'Playfair Display', serif;
-        text-align: center;
-        display: inline-block;
-        padding-top: 18%;
-        color: #0e172c;
-        font-size: 4rem; }
-      body main .borde .textoSobreMi p {
-        color: black;
-        text-align: unset;
-        font-family: 'Inter', sans-serif;
-        padding: 3rem;
-        margin: 1rem; }
+    body main .sobreMi h4, body main .sobreMi .h4 {
+      font-family: "Playfair Display", serif;
+      text-align: center;
+      display: inline-block;
+      padding-top: 18%;
+      color: #0e172c;
+      font-size: 4rem; }
+    body main .sobreMi p {
+      color: black;
+      text-align: unset;
+      font-family: "Inter", sans-serif;
+      padding: 3rem;
+      margin: 1rem; }
+
+div .tituloTrabajos {
+  background-color: #ffff;
+  font-family: 'Playfair Display';
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  margin-top: 3rem; }
 
 div .trabajosPadre {
   display: flex;
