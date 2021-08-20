@@ -8,19 +8,15 @@ div {
         margin-top: 3rem;
     }
     .trabajosPadre {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
         padding: 2rem;
         display: inline-flex;
         flex-flow: row nowrap;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         .trabajos {
             display: inline-flex;
-            width: 32vh;
+            width: auto;
             margin: 1rem;
             flex-direction: row;
             align-items: center;

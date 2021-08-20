@@ -38,28 +38,26 @@ body {
         margin: 5%;
         .sobreMi {
             display: grid;
-            gap: 10rem;
+            gap: 8rem;
             grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-            background-color: #ece8f7;
-            padding: 8px;
+            background-color: rgb(236, 232, 247);
             .imageSobreMi {
                 grid-column: span 1;
                 width: 25rem;
                 margin: auto;
                 flex-wrap: wrap;
+                img {
+                    width: inherit;
+                    grid-template-columns: repeat(auto-fill, minmax(10rem, 30%));
+                }
+            }
+            .textoSobreMi {
+                grid-column: span 2;
+                .tituloSobreMi {
+                    font-size: 3rem;
+                }
             }
         }
-        img {
-            width: inherit;
-            grid-template-columns: repeat(auto-fill, minmax(10rem, 30%));
-        }
-    }
-}
-
-.textoSobreMi {
-    grid-column: auto;
-    .tituloSobreMi {
-        font-size: 3rem;
     }
 }
 

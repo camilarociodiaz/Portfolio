@@ -7573,23 +7573,21 @@ body main {
   margin: 5%; }
   body main .sobreMi {
     display: grid;
-    gap: 10rem;
+    gap: 8rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    background-color: #ece8f7;
-    padding: 8px; }
+    background-color: #ece8f7; }
     body main .sobreMi .imageSobreMi {
       grid-column: span 1;
       width: 25rem;
       margin: auto;
       flex-wrap: wrap; }
-  body main img {
-    width: inherit;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 30%)); }
-
-.textoSobreMi {
-  grid-column: auto; }
-  .textoSobreMi .tituloSobreMi {
-    font-size: 3rem; }
+      body main .sobreMi .imageSobreMi img {
+        width: inherit;
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 30%)); }
+    body main .sobreMi .textoSobreMi {
+      grid-column: span 2; }
+      body main .sobreMi .textoSobreMi .tituloSobreMi {
+        font-size: 3rem; }
 
 h4, .h4 {
   font-family: "Playfair Display", serif;
@@ -7614,19 +7612,15 @@ div .tituloTrabajos {
   margin-top: 3rem; }
 
 div .trabajosPadre {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   padding: 2rem;
   display: inline-flex;
   flex-flow: row nowrap;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
   div .trabajosPadre .trabajos {
     display: inline-flex;
-    width: 32vh;
+    width: auto;
     margin: 1rem;
     flex-direction: row;
     align-items: center;
