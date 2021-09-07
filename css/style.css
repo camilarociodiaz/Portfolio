@@ -7679,6 +7679,31 @@ div .trabajosPadre {
 footer {
   background-color: #d9d4e7;
   padding: 2rem; }
+  footer .redes-containe {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center; }
+    footer .redes-containe ul:hover {
+      filter: blur(1px); }
+    footer .redes-containe ul li {
+      display: inline-block;
+      margin: 0 5px;
+      width: 50px;
+      text-align: center; }
+      footer .redes-containe ul li a {
+        display: block;
+        padding: 0 10px;
+        background-color: #333;
+        color: #fff;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow: 0 3px 5px opx black;
+        transition: 0.2s; }
+        footer .redes-containe ul li a:hover {
+          transform: translateY(-3px) scale(1.05);
+          box-shadow: 0 5px 5px 0px black;
+          filter: none; }
 
 /*CONTACTO */
 .container {
