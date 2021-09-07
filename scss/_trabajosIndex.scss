@@ -8,7 +8,7 @@ div {
         margin-top: 3rem;
     }
     .trabajosPadre {
-        padding: 2rem;
+        padding: 1rem;
         display: inline-flex;
         flex-flow: row nowrap;
         flex-direction: row;
@@ -17,7 +17,7 @@ div {
         .trabajos {
             display: inline-flex;
             width: auto;
-            margin: 1rem;
+            margin: 0px;
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
@@ -31,6 +31,7 @@ div {
                 margin: 0;
                 align-items: center;
                 font-family: 'Playfair Display', serif;
+                font-size: 1.5rem;
                 &:hover {
                     color: gray;
                 }

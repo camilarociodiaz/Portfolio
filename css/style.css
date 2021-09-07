@@ -7612,7 +7612,7 @@ div .tituloTrabajos {
   margin-top: 3rem; }
 
 div .trabajosPadre {
-  padding: 2rem;
+  padding: 1rem;
   display: inline-flex;
   flex-flow: row nowrap;
   flex-direction: row;
@@ -7621,7 +7621,7 @@ div .trabajosPadre {
   div .trabajosPadre .trabajos {
     display: inline-flex;
     width: auto;
-    margin: 1rem;
+    margin: 0px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around; }
@@ -7634,7 +7634,8 @@ div .trabajosPadre {
       padding: 0;
       margin: 0;
       align-items: center;
-      font-family: 'Playfair Display', serif; }
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; }
       div .trabajosPadre .trabajos a:hover {
         color: gray; }
       div .trabajosPadre .trabajos a .imagenTrabajo {
@@ -7679,19 +7680,24 @@ div .trabajosPadre {
 footer {
   background-color: #d9d4e7;
   padding: 2rem; }
-  footer .redes-containe {
+  footer .followMe strong {
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.5rem; }
+  footer .redes-container {
     display: flex;
-    height: 100vh;
     align-items: center;
-    justify-content: center; }
-    footer .redes-containe ul:hover {
+    justify-content: center;
+    padding: 1rem; }
+    footer .redes-container ul:hover a {
       filter: blur(1px); }
-    footer .redes-containe ul li {
+    footer .redes-container ul li {
       display: inline-block;
-      margin: 0 5px;
-      width: 50px;
+      margin: 0 1rem;
+      width: 3rem;
       text-align: center; }
-      footer .redes-containe ul li a {
+      footer .redes-container ul li a {
         display: block;
         padding: 0 10px;
         background-color: #333;
@@ -7700,10 +7706,11 @@ footer {
         font-size: 18px;
         box-shadow: 0 3px 5px opx black;
         transition: 0.2s; }
-        footer .redes-containe ul li a:hover {
+        footer .redes-container ul li a:hover {
           transform: translateY(-3px) scale(1.05);
           box-shadow: 0 5px 5px 0px black;
-          filter: none; }
+          filter: none;
+          color: #d9d4e7; }
 
 /*CONTACTO */
 .container {
