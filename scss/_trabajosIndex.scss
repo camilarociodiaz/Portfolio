@@ -71,18 +71,11 @@ div {
         border-radius: 12px;
         display: flex;
         justify-content: center;
+        &:hover {
+            background-color: #333;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+            filter: none;
+        }
     }
 }
-
-
-/*
-.trabajosPadre li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-
-*/

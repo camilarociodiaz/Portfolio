@@ -1,52 +1,66 @@
-/*CONTACTO */
-
-.container {
-    background-color: rgb(238, 174, 202);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 1rem;
-    margin: 3rem;
-    .textoContacto h1,
-    p {
-        text-align: center;
-        color: black;
-        font-family: 'Playfair Display';
-    }
-}
-
-.grid {
-    display: grid;
-    grid-template-areas: "nombre asunto""nombre texto""nombre texto""deseo deseo""botones botones";
-    grid-auto-columns: 58vh;
-    justify-items: start;
-    .nombre_completo {
-        grid-area: nombre;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .asunto {
-        grid-area: asunto;
-        padding: 1rem;
-    }
-    .texto {
-        grid-area: texto;
-    }
-    .deseo {
-        grid-area: deseo;
-    }
-    .botones {
-        grid-area: botones;
-        padding: 1rem;
-        margin: 3px auto;
-        flex-direction: row;
-        input {
-            background-color: #d9d4e7;
-            padding: 1rem;
-            margin: 1rem;
-            border-radius: 12px;
-        }
-    }
-}
+                        /*CONTACTO */
+                        
+                        .container {
+                            background-color: #eeaeca;
+                            display: flex;
+                            align-items: center;
+                            padding: 1rem;
+                            margin: 3rem;
+                            flex-wrap: nowrap;
+                            flex-direction: column;
+                        }
+                        
+                        .textoContacto h1,
+                        p {
+                            text-align: center;
+                            color: black;
+                            font-family: 'Playfair Display';
+                        }
+                        
+                        .grid {
+                            display: grid;
+                            grid-template-areas: "nombre" "asunto""texto""deseo""botones";
+                            grid-auto-columns: 58vh;
+                            justify-items: start;
+                            .nombre_completo {
+                                grid-area: nombre;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+                            }
+                            .asunto {
+                                grid-area: asunto;
+                                padding: 1rem;
+                            }
+                            .texto {
+                                grid-area: texto;
+                            }
+                            .deseo {
+                                grid-area: deseo;
+                            }
+                            .botones {
+                                grid-area: botones;
+                                padding: 1rem;
+                                margin: 3px auto;
+                                flex-direction: row;
+                                input {
+                                    background-color: #d9d4e7;
+                                    padding: 1rem;
+                                    margin: 1rem;
+                                    border-radius: 12px;
+                                    &:hover {
+                                        background-color: #333;
+                                        transform: translateY(-3px) scale(1.05);
+                                        box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 4);
+                                        filter: none;
+                                        color: white;
+                                    }
+                                }
+                            }
+                            @media (max-width:600px) {
+                                .contacto-container {
+                                    flex: 100%;
+                                    grid-template-areas: "nombre" "asunto""texto""deseo""botones";
+                                }
+                            }
+                        }

@@ -7666,18 +7666,12 @@ div .trabajosPadre {
     border-radius: 12px;
     display: flex;
     justify-content: center; }
+    .botonPadre .botonIndex:hover {
+      background-color: #333;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 5px 5px 0px black;
+      filter: none; }
 
-/*
-.trabajosPadre li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-
-*/
 footer {
   background-color: #d9d4e7;
   padding: 2rem; }
@@ -7717,20 +7711,21 @@ footer {
 .container {
   background-color: #eeaeca;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   align-items: center;
   padding: 1rem;
-  margin: 3rem; }
-  .container .textoContacto h1, .container .textoContacto .h1,
-  .container p {
-    text-align: center;
-    color: black;
-    font-family: 'Playfair Display'; }
+  margin: 3rem;
+  flex-wrap: nowrap;
+  flex-direction: column; }
+
+.textoContacto h1, .textoContacto .h1,
+p {
+  text-align: center;
+  color: black;
+  font-family: 'Playfair Display'; }
 
 .grid {
   display: grid;
-  grid-template-areas: "nombre asunto" "nombre texto" "nombre texto" "deseo deseo" "botones botones";
+  grid-template-areas: "nombre" "asunto" "texto" "deseo" "botones";
   grid-auto-columns: 58vh;
   justify-items: start; }
   .grid .nombre_completo {
@@ -7755,6 +7750,16 @@ footer {
       padding: 1rem;
       margin: 1rem;
       border-radius: 12px; }
+      .grid .botones input:hover {
+        background-color: #333;
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px black;
+        filter: none;
+        color: white; }
+  @media (max-width: 600px) {
+    .grid .contacto-container {
+      flex: 100%;
+      grid-template-areas: "nombre" "asunto" "texto" "deseo" "botones"; } }
 
 /*diseño grafico*/
 body {
@@ -7764,17 +7769,21 @@ body {
   display: flex;
   padding: 5px;
   flex-wrap: wrap; }
-  .rowDesign .columDesign {
-    flex: 25%;
-    padding: 5px; }
-    .rowDesign .columDesign img {
-      width: 100%;
-      margin-top: 5px; }
+
+.columDesign {
+  flex: 25%;
+  padding: 5px; }
+  .columDesign img {
+    width: 100%;
+    margin-top: 5px; }
+    .columDesign img:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 5px 5px 0px black; }
   @media (max-width: 800px) {
-    .rowDesign .columDesign {
+    .columDesign .columDesign {
       flex: 50%; } }
   @media (max-width: 600px) {
-    .rowDesign .columDesign {
+    .columDesign .columDesign {
       flex: 100%; } }
 
 .rowDesign {
@@ -7807,12 +7816,15 @@ body {
     .rowDesign .columDesign video {
       width: 100%;
       margin-top: 5px; }
-  @media (max-width: 800px) {
-    .rowDesign .columDesign {
-      flex: 50%; } }
-  @media (max-width: 600px) {
-    .rowDesign .columDesign {
-      flex: 100%; } }
+      .rowDesign .columDesign video:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px black; }
+    @media (max-width: 800px) {
+      .rowDesign .columDesign .columDesign {
+        flex: 50%; } }
+    @media (max-width: 600px) {
+      .rowDesign .columDesign .columDesign {
+        flex: 100%; } }
 
 /*trabajos*/
 body .trabajosDi {
