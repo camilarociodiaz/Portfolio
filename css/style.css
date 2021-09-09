@@ -7689,7 +7689,7 @@ footer {
       filter: blur(1px); }
     footer .redes-container ul li {
       display: inline-block;
-      margin: 0 1rem;
+      margin: 0 0.5rem;
       width: 3rem;
       text-align: center; }
       footer .redes-container ul li a {
@@ -7790,10 +7790,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh; }
+  height: fit-content;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-wrap: nowrap; }
   .industrialDesign .card {
-    width: 60vw;
+    width: fit-content;
     margin: 10px;
     background-color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5); }
@@ -7805,7 +7807,8 @@ body {
     .industrialDesign .card:hover .card__thumb::after {
       top: 0; }
     .industrialDesign .card:hover .card__snippet {
-      margin: 20px 0; }
+      margin: 20px 0;
+      color: white; }
     .industrialDesign .card__thumb {
       position: relative;
       max-height: 400px;
